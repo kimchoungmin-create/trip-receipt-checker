@@ -2,12 +2,14 @@
   "name": "trip-receipt-checker",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "pnpm@11.19.0",
   "engines": {
     "node": ">=22.13.0"
   },
   "scripts": {
     "dev": "vinext dev",
     "build": "vinext build",
+    "build:pages": "vite build --config vite.pages.config.ts",
     "start": "vinext start",
     "test": "node --test tests/trip-utils.test.ts",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next"
